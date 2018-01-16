@@ -7,7 +7,8 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "start": "npm run dev"
   },
   "dependencies": {
     "riot": "^3.8.1"
@@ -25,6 +26,7 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "riot-hot-reload": "^1.0.0",
     "riot-tag-loader": "^2.0.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
